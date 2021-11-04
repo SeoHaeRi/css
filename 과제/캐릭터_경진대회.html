@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>character_zflower</title>
+    <style>
+        .face {
+            width: 400px;
+            height: 400px;
+            background: #daeffd;
+            border-radius: 50%;
+            position: relative;
+            left: 400px;
+            top: 100px;
+            
+        }
+
+        .petal {
+            width: 160px;
+            height: 100px;
+            position: relative;
+            background: #d2c3fa;
+            border-radius: 80px 80px 0 0;
+            z-index: -1;
+        }
+
+        .petal:nth-child(1) {
+            top: -80px;
+            left: 120px;
+        }
+        .petal:nth-child(2) {
+            top: -90px;
+            left: 280px;
+            transform: rotate(60deg);
+        }
+        .petal:nth-child(3) {
+            top: -50px;
+            left: 350px;
+            transform: rotate(90deg);
+        }
+        .petal:nth-child(4) {
+            top: 10px;
+            left: 280px;
+            transform: rotate(130deg);
+        }
+        .petal:nth-child(5) {
+            top: -20px;
+            left: 120px;
+            transform: rotate(180deg);
+        }
+        .petal:nth-child(6) {
+            top: -200px;
+            right: 40px;
+            transform: rotate(-130deg);
+        }
+        .petal:nth-child(7) {
+            top: -460px;
+            right: 110px;
+            transform: rotate(-90deg);
+        }
+        .petal:nth-child(8) {
+            top: -710px;
+            right: 40px;
+            transform: rotate(-50deg);
+        }
+
+        .eyeLeft {
+            width: 100px;
+            height: 200px;
+            border-radius: 30px;
+            transform-origin: 400 0;
+            top: 100px;
+            right: 100px;
+            z-index: 3;
+        }
+        .eyeRight {
+            width: 100px;
+            height: 200px;
+            border-radius: 30px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="zflower">
+        <div class="face">
+
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+
+            <div class="eyeLeft"></div>
+            <div class="eyeRight"></div>
+        </div>
+    </div>
+</body>
+</html>
