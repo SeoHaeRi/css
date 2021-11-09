@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infinite</title>
+    <style>
+        @keyframes yoon {
+            from {transform: translate(100px, 0);}
+						to {transform: translate(300px, 0);}
+        }
+        div {
+            position: absolute;
+            margin: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+
+            /* 애니메이션 이름 */
+            animation-name: yoon;
+        }
+        /* [ 재생시간이 0인 경우 ] */
+        .duration_0s {
+            top: 20px;
+            animation-duration: 0;
+        }
+        /* [ 재생시간이 음수인 경우 ] */
+        .duration_minus {
+            top: 130px;
+            animation-duration: -3s;
+        }
+        /* [ 재생시간이 양수인 경우 ] */
+        .duration_plus {
+            top: 240px;
+            animation-duration: 3s;
+        }
+        /* [ 1초 이하의 재생시간을 입력할 경우 ] */
+        .duration_ms {
+            top: 350px;
+            animation-duration: 500ms;
+        }
+
+        /* [ 재생횟수가 유리수인 경우 ] */
+        .iteration-count_rational {
+            top: 350px;
+            animation-iteration-count: 1.5;
+        }
+        /* [ 애니메이션을 무한 반복할 경우 ] */
+        .iteration-count_infinite {
+            top: 460px;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="duration_0s">0s</div>
+    <div class="duration_minus">minus</div>
+    <div class="duration_plus">plus</div>
+    <div class="duration_ms">ms</div>
+    <div class="iteration-count_rational">rational</div>
+    <div class="iteration-count_infinite">infinite</div>
+</body>
+</html>
