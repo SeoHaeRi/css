@@ -130,12 +130,16 @@
   border: none;
 }
 
+.cont-inp .btn-exc {
+  position: relative;
+}
+
 .cont-inp .btn-exc::after {
   content: "";
   width: 64px;
   height: 72px;
   position: absolute;
-  right: 250px;
+  right: -62px;
   background-image: url("images-law/hand.png");
 }
 
