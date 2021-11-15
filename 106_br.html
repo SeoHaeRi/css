@@ -9,26 +9,37 @@
         .br{
             display : block;
         }
+
+        .sub-title {
+            color: red;
+        }
     </style>
 </head>
 <body>
+    <!-- 
+        개행하는 것에는 이유가 있을 것입니다. 따라서 개행의 목적에 맞게 사용하시는 편을 권장해드립니다. 
+        때에 따라서는 개행의 목적이 강조라면 strong이나 em으로 개행을 하기도 합니다.
+    -->
+
     <!-- 금지사항 -->
-    <p>Lorem ipsum dolor <br> sit amet consectetur <br> adipisicing elit. Maxime velit molestiae ad ullam, <br> consequatur, similique <br> exercitationem odit vel <br> asperiores explicabo <br> voluptatibus? Accusamus reprehenderit iste eveniet in alias deserunt, voluptate molestiae.</p>
+    <small>본 서비스 <br> 내 이미지 및 콘텐츠의 <br> 저작권은 주식회사 <br> WeNiv에 있습니다. <br> 수정 및 재배포, <br>무단 도용 시 법적인 <br> 문제가 발생할 수 있습니다.</small>
 
-    <!-- 비권장사항 -->
-    <p>Lorem, ipsum <span class="br"></span>dolor sit amet consectetur adipisicing elit. <span class="br"></span>Reprehenderit, odio facilis numquam dolorem beatae id labore alias, <span class="br"></span>quis molestiae saepe <span class="br"></span>aspernatur inventore culpa? Itaque doloremque dolorum maxime natus amet dolorem?</p>
+    <!-- 사용사례 1 (권장) -->
+    <!-- 모바일에서는 br 태그를 display none -->
+    <small>본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다. <br> 수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</small>
 
-    <!-- 권장 1 -->
-    <p>Lorem, ipsum dolor sit amet consectetur</p>
-    <p>adipisicing elit. Reprehenderit, odio facilis numquam</p>
-    <p>dolorem beatae id labore alias, quis molestiae</p>
-    <p>saepe aspernatur inventore culpa? Itaque doloremque</p>
-    <p>dolorum maxime natus amet dolorem?</p>
+    <!-- 사용사례 2 (권장) -->
+    <p>본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.</p>
+    <p>수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
 
-    <!-- 권장 2 -->
+    <!-- 사용사례 3 (비권장하지만 엄연히 사용사례가 있음) -->
+    <p>본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다. <span class="br"></span> 수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
+
+    <!-- 사용사례 4 -->
     <!-- article 넓이 조절을 통한 줄바꿈  -->
+    <!-- 색을 바꾸거나 css를 조금 다르게 할 때에도 강조하는 태그 사용 -->
     <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur atque deserunt, asperiores est, debitis corporis, natus perferendis voluptate qui tenetur quae eaque? Cum, earum sint? Tenetur magni hic repellat!</p>
+        <p>Lorem ipsum <strong>dolor</strong> sit amet consectetur adipisicing elit. Perspiciatis pariatur atque deserunt, asperiores est, debitis corporis, natus perferendis voluptate qui tenetur quae eaque? Cum, earum sint? Tenetur magni hic repellat!</p>
     </article>
 </body>
 </html>
